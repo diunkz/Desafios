@@ -35,8 +35,6 @@ class Solution {
         int sobe = 0;
         int desce = 0;
 
-        char temp = 't';
-
 
         if ( (S.charAt(0) != '?' && S.charAt(indiceFimString) != '?') && (S.charAt(0) != S.charAt(indiceFimString)) ){
             return "NO";

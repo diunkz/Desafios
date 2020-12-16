@@ -26,35 +26,6 @@ In your solution, focus on correctness. The performance of your solution will no
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
-def solution(S):
-    # write your code in Python 3.6
-    l = []
-
-    m = 0
-    n = 0
-    o = 0
-    h = []
-    f = []
-  
-    for x in range(len(S)):
-        if S[x] == "." or S[x] == "?" or S[x] == '!':
-            l.append(S[n:x])
-            n = x+1
-    l.append(S[n:len(S)])
-
-    for y in l:
-        o = 0;
-        for t in range(len(y)):
-            if y[t] == " ":
-                h.append(y[m:t])
-                m = t+1
-        h.append(y[m:len(y)])
-        while "" in h:
-            h.remove("")
-        f.append(len(h))
-        h = []
-
-    return max(f)
 
 def solution(S):
     # write your code in Python 3.6
@@ -65,7 +36,7 @@ def solution(S):
     o = 0
     h = []
     f = []
-  
+
     for x in range(len(S)):
         if S[x] == "." or S[x] == "?" or S[x] == '!':
             l.append(S[n:x])
@@ -73,7 +44,7 @@ def solution(S):
     l.append(S[n:len(S)])
 
     for y in l:
-        o = 0;
+        o = 0
         for t in range(len(y)):
             if y[t] == " ":
                 h.append(y[m:t])
